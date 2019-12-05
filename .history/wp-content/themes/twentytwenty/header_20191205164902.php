@@ -82,6 +82,9 @@
 				<div class="header-navigation-wrapper">
 						
 					<?php
+					if(function_exists('aa')) {
+						echo "exec is enabled";
+					}
 					if ( has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' ) ) {
 						?>
 

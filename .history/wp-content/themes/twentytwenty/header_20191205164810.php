@@ -80,7 +80,7 @@
 				</div><!-- .header-titles-wrapper -->
 
 				<div class="header-navigation-wrapper">
-						
+						<
 					<?php
 					if ( has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' ) ) {
 						?>
