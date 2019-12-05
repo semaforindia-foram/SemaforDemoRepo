@@ -27,12 +27,12 @@ CREATE TABLE `wp_users` (
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`),
   KEY `user_email` (`user_email`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_users` WRITE;
 /*!40000 ALTER TABLE `wp_users` DISABLE KEYS */;
-INSERT INTO `wp_users` VALUES (1,'admin','$P$BYGhtY2ojT7AnVG7GJVzIdjTOsdubr/','admin','foram.sanghani@semafor.co.in','','2019-12-05 10:53:04','',0,'admin'),(2,'foram','$P$BDZC2sjKHnNXThCyy8OwY5H44ka2Qw/','foram','foram@foram.com','','2019-12-05 11:56:44','',0,'Foram Sanghani');
+INSERT INTO `wp_users` VALUES (1,'admin','$P$BYGhtY2ojT7AnVG7GJVzIdjTOsdubr/','admin','foram.sanghani@semafor.co.in','','2019-12-05 10:53:04','',0,'admin'),(2,'foram','$P$BDZC2sjKHnNXThCyy8OwY5H44ka2Qw/','foram','foram@foram.com','','2019-12-05 11:56:44','',0,'Foram Sanghani'),(3,'temp','$P$Bc2mJ9it/rqQLw.QUuz7kTcBxWXFsv/','temp','temp@tem.com','','2019-12-05 12:24:11','1575548652:$P$BdBc/T/TA6o8XXSZ9S8OA3Er0cnghi1',0,'temp temp');
 /*!40000 ALTER TABLE `wp_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
