@@ -20,6 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('REVISR_GIT_PATH', 'https://github.com/semaforindia-foram/SemaforDemoRepo.git'); // Added by Revisr
 define( 'DB_NAME', 'wordpress' );
 
 /** MySQL database username */
