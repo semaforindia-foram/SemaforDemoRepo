@@ -27,12 +27,12 @@ CREATE TABLE `wp_users` (
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`),
   KEY `user_email` (`user_email`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_users` WRITE;
 /*!40000 ALTER TABLE `wp_users` DISABLE KEYS */;
-INSERT INTO `wp_users` VALUES (1,'admin','$P$BmVo4kp/FTChdutU3GKyB4iTJ1Zh7n1','admin','m.waqar@semafor.com','','2019-02-25 05:48:11','',0,'admin');
+INSERT INTO `wp_users` VALUES (1,'admin','$P$BmVo4kp/FTChdutU3GKyB4iTJ1Zh7n1','admin','m.waqar@semafor.com','','2019-02-25 05:48:11','',0,'admin'),(2,'neha','$P$BXHOqnXNTyVTE2Gw9SejDRGtOjqzqE1','neha','neha@neha.com','','2019-12-06 06:53:44','',0,'neha gupta');
 /*!40000 ALTER TABLE `wp_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
