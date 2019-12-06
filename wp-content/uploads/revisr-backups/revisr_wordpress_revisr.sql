@@ -9,23 +9,22 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-DROP TABLE IF EXISTS `wp_revisr`;
+DROP TABLE IF EXISTS `wordpress_revisr`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `wp_revisr` (
+CREATE TABLE `wordpress_revisr` (
   `id` mediumint(9) NOT NULL AUTO_INCREMENT,
   `time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `message` text,
   `event` varchar(42) NOT NULL,
   `user` varchar(60) DEFAULT NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
-LOCK TABLES `wp_revisr` WRITE;
-/*!40000 ALTER TABLE `wp_revisr` DISABLE KEYS */;
-INSERT INTO `wp_revisr` VALUES (1,'2019-12-06 06:31:59','Error pushing changes to the remote repository.','error','admin'),(2,'2019-12-06 06:32:34','Error backing up the database.','error','admin'),(3,'2019-12-06 06:33:54','Created new branch: development','branch','admin'),(4,'2019-12-06 06:33:54','Checked out branch: development.','branch','admin'),(5,'2019-12-06 06:34:42','Successfully backed up the database.','backup','admin'),(6,'2019-12-06 06:34:43','Committed <a href=\"http://localhost/wordpress/wp-admin/admin.php?page=revisr_view_commit&commit=f30d267&success=true\">#f30d267</a> to the local repository.','commit','admin'),(7,'2019-12-06 06:34:45','Error pushing changes to the remote repository.','error','admin'),(8,'2019-12-06 06:36:11','Successfully backed up the database.','backup','admin'),(9,'2019-12-06 06:36:12','Error pushing changes to the remote repository.','error','admin');
-/*!40000 ALTER TABLE `wp_revisr` ENABLE KEYS */;
+LOCK TABLES `wordpress_revisr` WRITE;
+/*!40000 ALTER TABLE `wordpress_revisr` DISABLE KEYS */;
+/*!40000 ALTER TABLE `wordpress_revisr` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
