@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'uknumberplateregular';
+  src: url('../fonts/uknumberplate-webfont.woff2') format('woff2'),
+       url('../fonts/uknumberplate-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Large number plate */
+.plate-wrapper {
+  width: 828px;
+  max-height:152px;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  margin: 32px 0;
+  background: linear-gradient(to bottom, #f8d038 0%,#f5ca2e 100%);
+  border-radius: 5px;
+  line-height: 1;
+}
+/* The blue section of the plate */
+.euGB-plate__container {
+  width: 12.5%;
+}
+.euGB-plate__bg {
+  height: 100%;
+  max-height: 152px;
+  background: #063298;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+}
+/* EU Stars Symbol */
+.euGB-plate__eu {
+  display: block;
+  width: 75px;
+  height:75px;
+  position: relative;
+  top: 0.25em;
+  left: 0.35em;
+  background-image: url(../img/euStarsSmall.png);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: cover;
+}
+/* EU Country Code */
+.euGB-plate__cc {
+  display: block;
+  position: relative;
+  top: 0.5em;
+  font-family: 'uknumberplateregular', ariel, sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+  color: #f5ca2e;
+}
+/* The yellow part of the plate */
+.registration-ui__container {
+  width: 87.5%;
+}
+
+.registration-ui {
+  padding: 0em;
+  font-weight: normal;
+  font-size: 7.3em;
+  border-radius: 6px;
+  font-family: 'uknumberplateregular', ariel, sans-serif;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Results */
+
+#results, #numberPlate {
+  width: 1170px;
+  margin: 32px auto;
+}
+
+.plate-and-summary__container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.plate-and-summary__plate {
+  width: 35%;
+  padding: 0.4em;
+}
+
+.plate-and-summary__summary {
+  width: 65%;
+  padding: 0.4em;
+}
+/* Smaller number plate */
+#results .euGB-plate__bg {
+  max-height: 80px;
+}
+#results .euGB-plate__eu {
+  width: 30px;
+  height: 30px;
+  top: 0.25em;
+  left: 0.25em;
+}
+#results .euGB-plate__cc {
+  font-size: 1.2em;
+  top: 0.35em;
+}
+#results .plate-wrapper {
+  width: 380px;
+  margin: 2em 0;
+}
+#results .registration-ui {
+  font-size: 3em;
+}
+
+/* Vehicle details */
+.plate-and-summary__summary ul {
+  margin: 2em 0;
+  list-style-type: none;
+}
+.plate-and-summary__summary li span {
+  width: 38%;
+  float: left;
+}
+
+/* Search Widget */
+
+.dvla_search_widget {
+  width: 380px;
+  height: 72px;
+  margin: 3px 0;
+}
+
+/* Smaller number plate
+.dvla_search_widget .euGB-plate__bg {
+  max-height: 80px;
+}*/
+
+.dvla_search_widget .euGB-plate__eu {
+  width: 30px;
+  height: 30px;
+  top: 0.15em;
+  left: 0.25em;
+}
+
+.dvla_search_widget .euGB-plate__cc {
+  font-size: 1.2em;
+  top: 0.5em;
+}
+
+.plate-wrapper {
+  margin: 3px 0;
+}
+
+.dvla_search_widget .registration-ui {
+  font-size: 1.25em;
+}
+.dvla_search_registration {
+  font-family: 'uknumberplateregular', ariel, sans-serif !important;
+  font-size: 1em !important;
+  line-height: 1 !important;
+  background: RGB(247, 206, 52);
+  background: RGBA(247, 206, 52, 0) !important;
+  color: black !important;
+  text-transform: uppercase;
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+.dvla_search_registration input {
+  border: 0 !important;
+  font-size: 1.1em;
+}
+.dvla_search_registration ::-webkit-input-placeholder {
+  color: #666;
+}
+.dvla_search_registration :-moz-placeholder {
+  color: #666 !important;
+}
+.dvla_search_registration ::-moz-placeholder {
+  color: #666 !important;
+} /* For the future */
+.dvla_search_registration :-ms-input-placeholder {
+  color: #666 !important;
+}
